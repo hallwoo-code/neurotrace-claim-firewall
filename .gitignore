@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.pytest_tmp/
+.streamlit/
+.env
+config.local.json
+outputs/*
+!outputs/.gitkeep
+*.pdf
+*.key
+*.pem
+model_cache/
+

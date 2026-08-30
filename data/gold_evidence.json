@@ -1,0 +1,63 @@
+{
+  "schema_version": "1.0",
+  "scope": "Exactly three PDF-verified claim-level evidence records for the NeuroTrace hackathon MVP.",
+  "records": [
+    {
+      "paper_id": "unknown-nd-baiocco-metaphor-processing-is-influenced-c9e215e1",
+      "citation": "Baiocco et al. (2025)",
+      "year": 2025,
+      "title": "Metaphor processing is influenced by stimulus emotionality and task demands: Evidence from ERPs",
+      "pdf_file_name": "Baiocco - 2025 - Metaphor processing is influenced by stimulus emotionality and task demands Evidence from ERPs.pdf",
+      "sha256": "9D95F8C5333C0F8D75E612922C34D1C27800F3C75397D4E158395D790E755AC2",
+      "evidence_role": "boundary_evidence",
+      "directness": "not_a_direct_test_of_supportive_context",
+      "scope": "英语母语者；情绪/中性、隐喻/字面句；意义合理性判断与被动阅读两种任务。",
+      "finding": "意义合理性判断中，情绪隐喻相对情绪字面句出现 N400（300–450 ms）和左前 LN（450–850 ms）；被动阅读中出现更正的 LP（450–850 ms）。任务要求与刺激情绪性共同决定 ERP 模式。",
+      "claim_boundary": "只能证明任务和情绪性会改变隐喻 ERP；不可作为“支持性语境降低 N400”的直接证据。",
+      "source_pages": [1, 10],
+      "related_figures": ["Fig. 3", "Fig. 5"],
+      "population": "English native speakers",
+      "conditions": "emotional/neutral × metaphorical/literal; sensicality judgement vs passive reading",
+      "erp_windows": ["N400 300–450 ms", "LN 450–850 ms", "LP 450–850 ms"],
+      "effect_direction": "task- and emotionality-dependent; no supportive-context direction tested"
+    },
+    {
+      "paper_id": "unknown-nd-tang-等-context-modulating-effect-80fe1563",
+      "citation": "Tang et al. (2025)",
+      "year": 2025,
+      "title": "Context-modulating effect on processing scientific metaphors: Evidence from ERPs",
+      "pdf_file_name": "Tang 等 - 2025 - Context-modulating effect on processing scientific metaphors Evidence from ERPs.pdf",
+      "sha256": "454B4DA5D1267CB170106D4F665CD14BB3BB7CF4DAA4E007DF5CE21BECB12E25",
+      "evidence_role": "conditional_support",
+      "directness": "direct_but_conditional",
+      "scope": "科学隐喻；功能相似型 SMF 与形状相似型 SMS；无语境、相关语境、无关语境。",
+      "finding": "相关语境总体降低科学隐喻加工难度；无关语境产生干扰；效应随 SMF/SMS 类型及早期语义提取、后期重分析阶段而不同。",
+      "claim_boundary": "不能泛化为所有语境、所有隐喻类型都稳定降低 N400。",
+      "source_pages": [1, 12, 13],
+      "related_figures": ["Fig. 10", "Fig. 11"],
+      "population": "Participants processing Chinese scientific metaphors",
+      "conditions": "context-free vs relevant context vs irrelevant context; SMF vs SMS",
+      "erp_windows": ["N400 early semantic retrieval", "LPC/LN late reanalysis"],
+      "effect_direction": "relevant context can facilitate; irrelevant context can interfere; type/stage dependent"
+    },
+    {
+      "paper_id": "unknown-nd-yao-等-dynamic-effect-of-1033eeb9",
+      "citation": "Yao et al. (2025)",
+      "year": 2025,
+      "title": "Dynamic effect of context on processing L2 metaphors with varied conventionality: An ERP study",
+      "pdf_file_name": "Yao 等 - 2025 - Dynamic effect of context on processing L2 metaphors with varied conventionality An ERP study.pdf",
+      "sha256": "C54FB58D2920D66295E2D1C87775F595D7281D6F7505E1773413CAFA31473060",
+      "evidence_role": "direct_qualifier_or_counterevidence",
+      "directness": "direct_test",
+      "scope": "中国英语双语者；L2 常规/新颖隐喻；支持性/字面语境；句子分为三个加工片段。",
+      "finding": "常规隐喻在两种语境下的 N400、持续负波和晚期正波无显著差异；新颖隐喻在支持性语境中早期持续负波/N400 更大，晚期额前正波更小，即早期阻碍词汇通达、后期促进整合。",
+      "claim_boundary": "直接否定“跨隐喻类型稳定降低 N400”。",
+      "source_pages": [1, 8, 9],
+      "related_figures": ["Fig. 4", "Fig. 5"],
+      "population": "Chinese–English bilinguals",
+      "conditions": "L2 conventional/novel metaphor × supportive/literal context across three sentence segments",
+      "erp_windows": ["sustained negativity 600–800 ms", "frontal N400 350–450 ms", "late frontal positivity 550–800 ms"],
+      "effect_direction": "conventional: null context effect; novel: early inhibition, later facilitation"
+    }
+  ]
+}
