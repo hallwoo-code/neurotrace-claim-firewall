@@ -26,9 +26,7 @@ NeuroTrace 是一个窄范围、离线、可复现的黑客松 MVP。它不替�
 
 其中 Tang 是 `conditional_support`，Yao 是 `direct_qualifier_or_counterevidence`，Baiocco 永久锁定为 `boundary_evidence`。即使人工批准 Baiocco，它也不会被升级成“支持性语境降低 N400”的直接证据。
 
-## 可选扩展：20 篇论文审核台（不属于比赛演示路径）
-
-这个页面是赛后继续清洗个人语料库的辅助工具，已从默认导航隐藏。比赛准备和录屏期间不要审核这 805 条，也不要进入该页面；唯一演示路径始终是首页的 3 篇黄金论文与 1 条论断。
+## 可选扩展：20 篇论文审核台
 
 需要继续个人语料清洗时，可直接访问 `/证据审核`。页面从 Zotero collection 读取真实论文名、作者、年份和 PDF 附件，不再把内部 `paper_id` 当作论文标题；原始队列与 Zotero 均保持只读。
 
