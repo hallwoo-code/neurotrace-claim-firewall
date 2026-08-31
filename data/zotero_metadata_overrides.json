@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "description": "Auditable fallbacks for standalone PDFs whose Zotero items have no bibliographic parent. Values were checked against PDF page 1.",
+  "items": {
+    "786GHKES": {
+      "title": "The Career of Metaphor",
+      "creators": ["Brian F. Bowdle", "Dedre Gentner"],
+      "year": "2005",
+      "source": "pdf_first_page"
+    },
+    "VUJ955QS": {
+      "title": "Metaphorical sentences are more emotionally engaging than their literal counterparts",
+      "creators": ["Francesca M. M. Citron", "Adele E. Goldberg"],
+      "year": "2014",
+      "source": "pdf_first_page"
+    }
+  }
+}

@@ -7,9 +7,13 @@
 | Python 3.9+ | 核心规则、数据模型、导出与完整性校验 | 否 |
 | Streamlit | 单页演示界面与浏览器下载 | 否 |
 | pytest | 自动化验收测试 | 否 |
+| pypdf | 可选语料审核台的 PDF 页数与文本定位 | 否 |
+| Pillow | 可选语料审核台的本地 PNG 标注与裁剪 | 否 |
+| Poppler / pdftoppm | 可选语料审核台的 PDF 页面渲染 | 否 |
+| Zotero Desktop Local API | 可选读取个人 collection 元数据与附件路径 | 仅本机 |
 | Python 标准库 | JSON、CSV、哈希、时间戳和路径处理 | 否 |
 
-项目运行时不调用在线大模型、嵌入模型、向量数据库或第三方论文 API。
+比赛黄金路径不调用在线大模型、嵌入模型、向量数据库或第三方论文 API。可选语料审核台只连接本机 Zotero Desktop，不上传论文内容。
 
 ## AI 工具
 
@@ -26,4 +30,3 @@ OpenAI Codex 用于赛期内的代码实现协作、测试执行、文档整理�
 - 不上传 PDF 或研究资料；
 - 本地 PDF 路径保存在 Git 忽略的 `config.local.json` 或环境变量中；
 - 公开仓库内容不包含 PDF、隐私数据、密钥或模型缓存。
-

@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-08-30",
+    "macrostructure": "Split Studio",
+    "theme": "Cobalt",
+    "enrichment": "real PDF evidence",
+    "brief": "Zotero-backed personal evidence review desk",
+    "slop_test": "pass (58/58)"
+  },
+  {
     "date": "2026-08-29",
     "macrostructure": "Workbench",
     "theme": "Cobalt",

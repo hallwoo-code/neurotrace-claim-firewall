@@ -17,7 +17,7 @@ def _pack():
     }
     integrity = {
         record.paper_id: {
-            "status": "verified", "path": record.pdf_file_name,
+            "status": "verified", "path": f"C:\\private\\papers\\{record.pdf_file_name}",
             "expected_sha256": record.sha256, "actual_sha256": record.sha256,
         }
         for record in records
@@ -40,4 +40,6 @@ def test_json_markdown_and_csv_round_trip_with_traceability():
     assert "Source pages: 1, 10" in markdown
     assert "不是通用RAG" in markdown
     assert all(row["expected_sha256"] for row in parsed_csv)
-
+    assert all("path" not in source for source in parsed_json["source_integrity"].values())
+    assert all(source["file_name"].endswith(".pdf") for source in parsed_json["source_integrity"].values())
+    assert "C:\\private\\papers" not in export_json(pack)

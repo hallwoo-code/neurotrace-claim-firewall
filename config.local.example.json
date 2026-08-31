@@ -1,4 +1,7 @@
 {
-  "pdf_dir": ""
+  "pdf_dir": "",
+  "zotero_collection_key": "",
+  "review_queue_path": "",
+  "literature_index_path": "",
+  "generated_notes_dir": ""
 }
-

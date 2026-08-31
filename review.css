@@ -1,0 +1,305 @@
+/* Hallmark · macrostructure: Split Studio · genre: modern-minimal · theme: Cobalt · enrichment: real PDF evidence · nav: N3 · footer: Ft1 · contrast: pass (40–41) · slop: pass (42–45) · honest: pass (46) · chrome: pass (47) · tokens: pass (48) · responsive: pass (49) · icons: pass (30) · mobile: pass (34, 49, 50–57) */
+/* Hallmark · pre-emit critique: P5 H5 E5 S5 R5 V5 */
+
+html,
+body {
+  overflow-x: clip;
+}
+
+[data-testid="stAppViewContainer"] > .main .block-container {
+  max-width: 96rem;
+}
+
+[data-testid="stSidebar"] {
+  border-inline-end: var(--rule-hairline);
+  background: var(--color-paper-2);
+}
+
+[data-testid="stSidebar"] h1,
+[data-testid="stSidebar"] h2,
+[data-testid="stSidebar"] h3 {
+  font-family: var(--font-display);
+  font-style: normal;
+}
+
+.nt-review-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-lg);
+  align-items: end;
+  margin-block-end: var(--space-xl);
+  padding-block-end: var(--space-lg);
+  border-bottom: var(--rule-strong);
+}
+
+.nt-review-head h1 {
+  margin: 0;
+  font-size: clamp(var(--text-2xl), 4vw, var(--text-display));
+  line-height: 1;
+}
+
+.nt-review-head p {
+  max-width: 62ch;
+  margin: var(--space-sm) 0 0;
+  color: var(--color-muted);
+}
+
+.nt-review-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-xs);
+  font-variant-numeric: tabular-nums;
+}
+
+.nt-review-metric {
+  min-width: 0;
+  padding-block-start: var(--space-xs);
+  border-top: var(--rule-strong);
+}
+
+.nt-review-metric strong {
+  display: block;
+  color: var(--color-ink);
+  font-family: var(--font-mono);
+  font-size: var(--text-lg);
+}
+
+.nt-review-metric span {
+  color: var(--color-muted);
+  font-size: var(--text-sm);
+}
+
+.nt-paper-title {
+  margin-block: 0 var(--space-xs);
+  font-size: var(--text-xl);
+  line-height: 1.12;
+}
+
+.nt-paper-meta {
+  margin: 0 0 var(--space-lg);
+  color: var(--color-muted);
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  overflow-wrap: anywhere;
+}
+
+.nt-review-item {
+  padding-block: var(--space-sm) var(--space-lg);
+}
+
+.nt-review-item h2,
+.nt-proof-pane h2 {
+  margin-block: 0 var(--space-sm);
+  font-size: var(--text-lg);
+}
+
+.nt-review-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  margin-block-end: var(--space-md);
+}
+
+.nt-review-badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2rem;
+  padding-inline: var(--space-sm);
+  border: var(--rule-strong);
+  border-radius: var(--radius-sm);
+  color: var(--color-ink-2);
+  background: var(--color-paper);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  white-space: nowrap;
+}
+
+.nt-review-badge--active {
+  border-color: var(--color-accent);
+  color: var(--color-accent-deep);
+  background: var(--color-accent-soft);
+}
+
+.nt-review-badge--warn {
+  border-color: var(--color-warning);
+  color: var(--color-ink);
+  background: var(--color-warning-soft);
+}
+
+.nt-review-badge--error {
+  border-color: var(--color-error);
+  color: var(--color-error);
+  background: var(--color-error-soft);
+}
+
+.nt-review-spec {
+  margin: 0;
+  border-top: var(--rule-hairline);
+}
+
+.nt-review-spec > div {
+  display: grid;
+  grid-template-columns: minmax(7rem, 0.32fr) minmax(0, 1fr);
+  gap: var(--space-md);
+  padding-block: var(--space-sm);
+  border-bottom: var(--rule-hairline);
+}
+
+.nt-review-spec dt {
+  color: var(--color-muted);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+}
+
+.nt-review-spec dd {
+  min-width: 0;
+  margin: 0;
+  color: var(--color-ink-2);
+  overflow-wrap: anywhere;
+}
+
+.nt-location {
+  margin-block: var(--space-md);
+  padding: var(--space-md);
+  border: var(--rule-strong);
+  border-radius: var(--radius-sm);
+  background: var(--color-paper-2);
+  color: var(--color-ink-2);
+}
+
+.nt-location strong {
+  display: block;
+  margin-block-end: var(--space-2xs);
+  color: var(--color-ink);
+}
+
+.nt-location--ok {
+  border-color: var(--color-success);
+  background: var(--color-success-soft);
+}
+
+.nt-location--warn {
+  border-color: var(--color-warning);
+  background: var(--color-warning-soft);
+}
+
+.nt-location--error {
+  border-color: var(--color-error);
+  background: var(--color-error-soft);
+}
+
+.nt-proof-pane {
+  min-width: 0;
+  padding-block: var(--space-sm) var(--space-lg);
+}
+
+.nt-proof-caption {
+  margin-block: 0 var(--space-md);
+  color: var(--color-muted);
+  font-size: var(--text-sm);
+}
+
+.nt-proof-pane img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: var(--rule-strong);
+  border-radius: var(--radius-sm);
+  background: var(--color-paper);
+}
+
+.nt-proof-figure {
+  margin: 0 0 var(--space-md);
+}
+
+.nt-proof-figure figcaption {
+  margin-block-start: var(--space-xs);
+  color: var(--color-muted);
+  font-size: var(--text-sm);
+  text-align: center;
+}
+
+[data-testid="stForm"] {
+  margin-block-start: var(--space-lg);
+  border: var(--rule-strong);
+  border-radius: var(--radius-md);
+  background: var(--color-paper);
+}
+
+[data-testid="stForm"] button,
+[data-testid="stDownloadButton"] button,
+[data-testid="stSidebar"] button {
+  min-height: 2.75rem;
+  white-space: nowrap;
+}
+
+[data-testid="stForm"] button:focus-visible,
+[data-testid="stDownloadButton"] button:focus-visible,
+[data-testid="stSidebar"] button:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+.nt-review-footer {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-xs);
+  margin-block-start: var(--space-2xl);
+  padding-block-start: var(--space-lg);
+  border-top: var(--rule-strong);
+}
+
+.nt-review-footer strong {
+  color: var(--color-ink);
+  font-family: var(--font-display);
+  font-size: var(--text-md);
+}
+
+.nt-review-footer span {
+  color: var(--color-muted);
+  font-size: var(--text-sm);
+}
+
+@media (min-width: 40rem) {
+  .nt-review-head {
+    grid-template-columns: minmax(0, 1.2fr) minmax(22rem, 0.8fr);
+  }
+
+  .nt-review-footer {
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: baseline;
+  }
+}
+
+@media (max-width: 39.999rem) {
+  .nt-review-metrics {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .nt-review-spec > div {
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-2xs);
+  }
+
+  [data-testid="stHorizontalBlock"] {
+    flex-wrap: wrap;
+  }
+}
+
+@media (pointer: coarse) {
+  [data-testid="stForm"] button,
+  [data-testid="stDownloadButton"] button,
+  [data-testid="stSidebar"] button {
+    min-height: 3rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: var(--dur-micro) !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: var(--dur-micro) !important;
+  }
+}

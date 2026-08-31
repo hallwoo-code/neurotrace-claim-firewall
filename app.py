@@ -139,7 +139,7 @@ def render_evidence_card(record: EvidenceRecord, integrity: Dict[str, object]) -
             f"图号：{', '.join(record.related_figures)}"
         )
         st.markdown(
-            f"<p class='nt-path'>{html.escape(str(integrity['path']))}<br>"
+            f"<p class='nt-path'>本地只读 PDF：{html.escape(record.pdf_file_name)}<br>"
             f"SHA256: {html.escape(str(integrity['expected_sha256']))}</p>",
             unsafe_allow_html=True,
         )

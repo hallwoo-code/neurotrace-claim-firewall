@@ -17,3 +17,10 @@ def test_streamlit_golden_path_and_reset_have_no_exception():
     assert not app.exception
     assert app.text_area[0].value.startswith("Supportive contexts consistently")
     assert any("等待编译" in markdown.value for markdown in app.markdown)
+
+
+def test_competition_page_does_not_render_local_pdf_path():
+    app_path = Path(__file__).resolve().parents[1] / "app.py"
+    source = app_path.read_text(encoding="utf-8")
+    assert "html.escape(str(integrity['path']))" not in source
+    assert "html.escape(record.pdf_file_name)" in source

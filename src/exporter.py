@@ -22,8 +22,18 @@ def build_evidence_pack(
     source_integrity: Mapping[str, Mapping[str, object]],
     generated_at: str = "",
 ) -> Dict[str, object]:
-    evidence = eligible_evidence(records, reviews)
+    record_list = list(records)
+    evidence = eligible_evidence(record_list, reviews)
     generated_at = generated_at or datetime.now(timezone.utc).replace(microsecond=0).isoformat()
+    public_integrity: Dict[str, Dict[str, object]] = {}
+    for record in record_list:
+        source = source_integrity.get(record.paper_id, {})
+        public_integrity[record.paper_id] = {
+            "status": source.get("status", "unknown"),
+            "file_name": record.pdf_file_name,
+            "expected_sha256": source.get("expected_sha256", record.sha256),
+            "actual_sha256": source.get("actual_sha256", ""),
+        }
     return {
         "product": "NeuroTrace",
         "generated_at": generated_at,
@@ -33,7 +43,7 @@ def build_evidence_pack(
         "safe_rewrite": safe_rewrite,
         "eligible_evidence_count": len(evidence),
         "evidence_matrix": evidence,
-        "source_integrity": dict(source_integrity),
+        "source_integrity": public_integrity,
     }
 
 
@@ -164,4 +174,3 @@ def export_csv(pack: Mapping[str, object]) -> str:
             "integrity_status": source.get("status", "unknown"),
         })
     return "\ufeff" + buffer.getvalue()
-

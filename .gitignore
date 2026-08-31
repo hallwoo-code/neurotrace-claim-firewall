@@ -2,7 +2,10 @@ __pycache__/
 *.py[cod]
 .pytest_cache/
 .pytest_tmp/
-.streamlit/
+tmp/
+.streamlit/*
+!.streamlit/config.toml
+dist/
 .env
 config.local.json
 outputs/*
@@ -11,4 +14,3 @@ outputs/*
 *.key
 *.pem
 model_cache/
-
